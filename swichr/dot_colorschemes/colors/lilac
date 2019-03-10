@@ -1,0 +1,30 @@
+! -- Author: illu
+! -- Title: lilac
+! -- Created: 2019
+! -- Wall: lilac.jpg
+
+#define bg      #352f3b
+#define fg      #d8c0de
+#define hl      #aa6a8f
+#define na      #554a5f
+#define icbs    #aa6a8f
+#define icfr    #bd769f
+#define icbk    #8e5877
+
+#define blk     #554a5f
+#define bblk    #554a5f
+#define red     #9685B4
+#define bred    #9685B4
+#define grn     #6F7862
+#define bgrn    #6F7862
+#define ylw     #d89693
+#define bylw    #d89693
+#define blu     #aa6a8f
+#define bblu    #aa6a8f
+#define mag     #b294bb
+#define bmag    #b294bb
+#define cyn     #75919b
+#define bcyn    #75919b
+#define wht     #d8c0de
+#define bwht    #d8c0de
+

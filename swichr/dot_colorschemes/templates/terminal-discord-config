@@ -1,0 +1,21 @@
+#? dest /home/usr/.config/terminal-discord/config.json
+{
+    "token": "[nonono]",
+    "max_name_length": 12,
+    "allign": true,
+    "separator": " │",
+    "history_length": null,
+    "default_guild": null,
+    "default_channel": null,
+    "mention_color": "$red_swichr",
+    "default_color": "$hl_swichr",
+    "prompt": " ─── ",
+    "show_date": false,
+    "show_time": true,
+    "use_nickname": true,
+    "select_count": 8,
+    "color_support": true,
+    "show_embeds": true,
+    "repeat_name": false,
+    "right_bound": true
+}

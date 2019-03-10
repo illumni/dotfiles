@@ -1,0 +1,30 @@
+! -- Author: illu
+! -- Title: ozean
+! -- Created: 2016
+! -- Wall: ozean.jpg
+
+#define bg      #404758
+#define fg      #a6afbe
+#define hl      #c5cfe1
+#define na      #2c323d
+#define icbs    #8fa1b3
+#define icfr    #8fa1b3
+#define icbk    #5b6772
+
+#define blk     #2c323d
+#define bblk    #65737e
+#define red     #bf616a
+#define bred    #bf616a
+#define grn     #a3be8c
+#define bgrn    #a3be8c
+#define ylw     #ebcb8b
+#define bylw    #ebcb8b
+#define blu     #8fa1b3
+#define bblu    #8fa1b3
+#define mag     #b48ead
+#define bmag    #b48ead
+#define cyn     #96b5b4
+#define bcyn    #96b5b4
+#define wht     #a6afbe
+#define bwht    #c5cfe1
+

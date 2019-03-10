@@ -1,0 +1,30 @@
+! -- Author: illu
+! -- Title: kaskade
+! -- Created: 2017
+! -- Wall: kaskade.jpg
+
+#define bg      #3D4949
+#define fg      #BDB8BF
+#define hl      #738464
+#define na      #516161
+#define icbs    #738464
+#define icfr    #738464
+#define icbk    #58654c
+
+#define blk     #516161
+#define bblk    #516161
+#define red     #735e66
+#define bred    #735e66
+#define grn     #738464
+#define bgrn    #738464
+#define ylw     #84776b
+#define bylw    #84776b
+#define blu     #6f7495
+#define bblu    #6f7495
+#define mag     #7b658e
+#define bmag    #7b658e
+#define cyn     #6f8a95
+#define bcyn    #6f8a95
+#define wht     #BDB8BF
+#define bwht    #BDB8BF
+

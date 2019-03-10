@@ -1,0 +1,65 @@
+
+!! Xresources !!
+
+#define bg      #352f3b
+#define fg      #d8c0de
+
+#define blk     #554a5f
+#define bblk    #554a5f
+#define red     #9685B4
+#define bred    #9685B4
+#define grn     #6F7862
+#define bgrn    #6F7862
+#define ylw     #d89693
+#define bylw    #d89693
+#define blu     #9685B4
+#define bblu    #9685B4
+#define mag     #b294bb
+#define bmag    #b294bb
+#define cyn     #75919b
+#define bcyn    #75919b
+#define wht     #d8c0de
+#define bwht    #d8c0de
+
+!! RXVT-Unicode
+
+!! RXVT-Unicode
+
+URxvt.iso14755:                 False
+URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
+URxvt.internalBorder:           9
+
+URxvt*perl-ext-common:          default,matcher,clipboard
+URxvt*url-launcher:             /usr/bin/surf
+URxvt*matcher.button:           1
+
+URxvt*font:         xft:Gohu Gohufont:size=9
+URxvt*italicFont:   xft:Gohu Gohufont:size=9
+URxvt*mapAlert:     true
+
+URxvt*scrollBar:    false
+URxvt*scrollstyle:  next
+
+! URxvt Colors
+
+URxvt*foreground:   fg
+URxvt*background:   bg
+URxvt*cursorColor:  fg
+
+URxvt*color0:   blk
+URxvt*color8:   bblk
+URxvt*color1:   red
+URxvt*color9:   bred
+URxvt*color2:   grn
+URxvt*color10:  bgrn
+URxvt*color3:   ylw
+URxvt*color11:  bylw
+URxvt*color4:   blu
+URxvt*color12:  bblu
+URxvt*color5:   mag
+URxvt*color13:  bmag
+URxvt*color6:   cyn
+URxvt*color14:  bcyn
+URxvt*color7:   wht
+URxvt*color15:  bwht
+
