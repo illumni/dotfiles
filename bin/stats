@@ -1,0 +1,88 @@
+#!/bin/bash
+# stats
+# simple system statistics script
+# by illu
+
+cl="$(tput setaf 1)██$(tput setaf 9)██$(tput setaf 3)██$(tput setaf 11)██$(tput setaf 2)██$(tput setaf 10)██$(tput setaf 6)██$(tput setaf 14)██$(tput setaf 12)██$(tput setaf 4)██$(tput setaf 5)██$(tput setaf 13)██    $(tput setaf 0)██$(tput setaf 8)██$(tput setaf 7)██$(tput setaf 15)██"
+cs="The current colorscheme is: $(cat $HOME/.current | grep 'Title' | awk '{print $2}') by $(cat $HOME/.current | grep 'Author' | awk '{print $2}')."
+
+hn="$(tput setaf 1)$(tput bold)Host\t- $(tput sgr0)$(uname -n)"
+os="$(tput setaf 1)$(tput bold)OS\t- $(tput sgr0)$(cat /etc/os-release | grep -Eo '^NAME..+' | sed 's/NAME=//;s/"//g') ($(uname -r))"
+ed="$(tput setaf 1)$(tput bold)Editor\t- $(tput sgr0)$(echo $EDITOR)"
+sh="$(tput setaf 1)$(tput bold)Shell\t- $(tput sgr0)$(echo $SHELL)"
+wm="$(tput setaf 1)$(tput bold)WM\t- $(tput sgr0)$(echo $DESKTOP_SESSION)"
+
+SCRNSHOT=false
+
+screenshot ()
+{
+    if $SCRNSHOT
+    then
+        echo -e "Taking screenshot..."
+        sleep 3
+        exec scrot
+    fi
+}
+
+echo_all ()
+{
+    echo -e ""
+    echo -e $cl
+    echo -e ""
+    echo -e $cs
+    echo -e ""
+    echo -e $hn
+    echo -e $os
+    echo -e $sh
+    echo -e $wm
+    echo -e $ed
+    echo -e ""
+}
+
+echo_stats ()
+{
+    echo -e ""
+    echo -e $hn
+    echo -e $os
+    echo -e $sh
+    echo -e $wm
+    echo -e $ed
+    echo -e ""
+}
+
+echo_colors ()
+{
+    echo -e ""
+    echo -e $cl
+    echo -e ""
+    echo -e $cs
+    echo -e ""
+}
+
+help_text ()
+{
+    echo -e "Usage: stats [OPTIONS]...\nPrint some info about the computer.\n\n  -c    echo only colors\n  -s    echo only stats\n  -p    take a screenshot\n  -h    display this help text\n"
+    echo -e "The default mode is to display stats and colors.\n"
+    exit 0
+}
+
+while getopts :hcps option
+do
+    case "${option}"
+    in
+        h) help_text ;;
+        c) echo_colors ;;
+        s) echo_stats ;;
+        p) SCRNSHOT=true ;;
+        \?) echo -e "stats: invalid option -- '$OPTARG'\nType 'stats -h' for more information."
+            exit 1
+        ;;
+    esac
+done
+
+if [ ! "$1" ] || [ "$1" = "-p" ]
+then
+    echo_all
+fi
+
+screenshot
